@@ -11,4 +11,5 @@ public class TodoData {
     private String name;
     private String description;
     private Long userId;
+    private UserData user;
 }
