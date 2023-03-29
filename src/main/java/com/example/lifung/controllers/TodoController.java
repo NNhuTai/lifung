@@ -23,7 +23,7 @@ public class TodoController {
         return totoService.getListTodo();
     }
 
-    @GetMapping("/get/{userId}")
+    @GetMapping("/get/user/{userId}")
     public List<TodoResponse> getByUser(@PathVariable Long userId) {
         return totoService.getByUser(userId);
     }
