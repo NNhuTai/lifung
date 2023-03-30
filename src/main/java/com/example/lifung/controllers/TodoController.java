@@ -32,4 +32,10 @@ public class TodoController {
     public void create(@RequestBody TodoRequest todo) {
         totoService.save(todo);
     }
+
+    @DeleteMapping("/delete/{id}")
+    public void create(@PathVariable Long id) {
+        totoService.delete(id);
+    }
+
 }
